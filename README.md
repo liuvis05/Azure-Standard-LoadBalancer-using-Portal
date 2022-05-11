@@ -13,12 +13,14 @@ Load Balancing Rules
 Inbound NAT Rules
 Verify the same via browser
 Implement Inbount NAT rules via LB and connect to VMs using SSH
+
 Step-01: Create two Azure VMs in a Virtual Network
 
 Create Resource Group: slb-demo
 Create Virtual Network: vnet1
 VM Names: vm1, vm2
 Custom Data: app-scripts/redhat-webvm-script.sh
+
 Step-02: Create Azure Standard Load Balancer
 
 Create Load Balancer with atleast one Frontend IP
@@ -26,6 +28,7 @@ Create Backend Pool in LB
 Create Health Probe
 Create Load Balancing Rule
 Create Two Inbound NAT Rules
+
 Step-03: Test by accessing the Application
 
 # Curl Test 
